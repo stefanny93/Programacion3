@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Venta carros</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<form action="guardar.php" method="post">
+<fieldset>
+	<legend>Registro de Vehí­culos</legend>
+
+
+	<table>
+		<tr>
+			<td>Marca</td>
+			<td>
+			<select name="marca">
+				<option>ford</option>
+				<option>chevrolet</option>
+			</select>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Modelo
+			</td>
+			<td>
+				<select>
+					<option>focus</option>
+					<option>aveo</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Año
+			</td>
+			<td>
+				<input type="year" name="ano" min="2007" max="2016" required>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Color
+			</td>
+			<td>
+				<input type="color" name="color">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Serial
+			</td>
+			<td>
+				<input type="number" name="serial" required>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Placa
+			</td>
+			<td>
+				<input type="text" name="placa" required>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Precio
+			</td>
+			<td>
+				<input type="number" name="placa">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Condición
+			</td>
+			<td>
+				<input type="radio" name="condicion" checked> Usado 
+				<input type="radio" name="condicion"> Nuevo
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Kilometros
+			</td>
+			<td>
+				<input type="number" name="kilometros">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Transmisión
+			</td>
+			<td>
+				<input type="radio" name="trans" checked> Automático <br>
+				<input type="radio" name="trans"> Sincrónico
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input type="submit" name="Enviar">
+				<input type="reset" name="Limpiar">
+			</td>
+		</tr>
+	</table>
+	
+</fieldset>
+</form>
+</body>
+</html>
